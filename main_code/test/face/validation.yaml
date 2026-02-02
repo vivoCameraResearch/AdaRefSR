@@ -1,0 +1,29 @@
+sf: 4
+exp_name: "version-1"  # change this to valid different experiment!
+dataset:
+  name: face
+  type: DegradationValidDataset
+
+  data_dir: your_code_path/data/face/dataset.json
+  sf: 4
+
+  crop_size: 512
+  io_backend:
+    type: disk
+  bicubic_model: "PIL"
+  scale: 4
+  phase: "test"
+
+enable_xformers_memory_efficient_attention: True
+allow_tf32: False
+
+pos_prompt: "A high-resolution, 8K, ultra-realistic image with sharp focus, vibrant colors, and natural lighting."
+align_method: "nofix"  # Can be 'nofix', 'wavelet', or 'adain'
+save_lr_pred_ref: True
+
+
+# for accelerator
+mixed_precision: fp16
+report_to: wandb
+seed: 42
+neg_prompt: "oil painting, cartoon, blur, dirty, messy, low quality, deformation, low resolution, oversmooth"

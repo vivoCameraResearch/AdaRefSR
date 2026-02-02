@@ -1,0 +1,14 @@
+# model path:
+sd_path: "your_code_path/model/stabilityai/sd-turbo"
+pretrained_backbone_path: "your_code_path/model/zhangap/S3Diff/s3diff.pkl"
+pretrained_ref_gen_path: "your_code_path/model/adarefsr.pkl"
+de_net_path: "your_code_path/assets/mm-realsr/de_net.pth"
+ram_path: "your_code_path/model/xinyu1205/recognize-anything/ram_swin_large_14m.pth"
+dape_path: "your_code_path/model/DAPE/DAPE.pth"
+
+# settings
+mixed_precision: "fp16"
+fusion_blocks: "full"
+align_method: "wavelet"
+is_image: True
+enable_xformers: True
