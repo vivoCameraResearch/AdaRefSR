@@ -161,13 +161,10 @@ We thank the authors of these projects for their great work and for making their
 If you find our work or code useful for your research, please cite:
 
 ```latex
-@misc{wang2026trustverifyadaptiveconditioning,
-      title={Trust but Verify: Adaptive Conditioning for Reference-Based Diffusion Super-Resolution via Implicit Reference Correlation Modeling}, 
-      author={Yuan Wang and Yuhao Wan and Siming Zheng and Bo Li and Qibin Hou and Peng-Tao Jiang},
-      year={2026},
-      eprint={2602.01864},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2602.01864}, 
+@inproceedings{wang2026trust,
+  title={Trust but Verify: Adaptive Conditioning for Reference-Based Diffusion Super-Resolution via Implicit Reference Correlation Modeling},
+  author={Wang, Yuan and Wan, Yuhao and Zheng, Siming and Li, Bo and Hou, Qibin and Jiang, Peng-Tao},
+  booktitle={The Fourteenth International Conference on Learning Representations},
+  year={2026}
 }
 ```
