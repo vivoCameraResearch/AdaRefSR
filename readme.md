@@ -77,15 +77,11 @@ Please download the following weights and place them in the `./models` directory
 ### 📊 Training Datasets
 1. **General SR Datasets**: 
    - Download **DIV2K** ([Link](https://huggingface.co/datasets/yangtao9009/DIV2K)), **DIV8K** ([Link](https://huggingface.co/datasets/yangtao9009/DIV8K)), and **Flickr2K** ([Link](https://huggingface.co/datasets/yangtao9009/Flickr2K)).
-   - Preparation: Follow the index format in `./datasets/info/*.txt`. 
-   - Organization: Process the data according to the structure defined in `./data/train`.
+   - Organization: Process the data according to the structure defined in `./data/train/*.txt`.
 
 2. **Face specific reference SR Dataset**: 
    - Download **CelebFaceRef-HQ** ([Link](https://huggingface.co/datasets/hangfrieddays/CelebFaceRef-HQ)).
-   - Processing: Run the provided script to partition the dataset:
-     ```bash
-     python ./data/create_celebref.py
-     ```
+   - Organization: Process the data according to the structure defined in `./data/train/celebref.json`.
 
 ### 🧪 Validation Datasets
 - Download the full four RefSR testing datasets from Hugging Face ([Link](https://huggingface.co/datasets/hangfrieddays/adarefsr_test_data)) and save it into the `./data/test` directory.
